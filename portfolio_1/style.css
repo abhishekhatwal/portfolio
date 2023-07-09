@@ -6,11 +6,16 @@
     font-family: 'Bebas Neue', sans-serif;
     background-color: black;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .container{
     display: flex;
     padding: 0rem 4rem ;
     box-shadow: 20px 20px -60px;
+    top:0px;
+    z-index: 10;
     position: sticky;
 }
 
@@ -46,6 +51,11 @@ color: white;
     height: 100vh;
     padding: 5rem;
 }
+.home-container{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
 .para-container{
     width: 50%;
 }
@@ -54,4 +64,149 @@ color: white;
     font-size: 3rem;
     margin-top: 10rem;
     color: white;
+}
+.about-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+    height: 100vh;  
+    overflow: hidden;
+}
+.about-container{
+display: flex;
+align-items: center;
+justify-content:center ;
+}
+.about-img{
+    width: 40%;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.animate-about-img{
+  opacity: 1;
+  transition: 1s ease-in-out;
+  transform: translateX(0);
+}
+
+.about-intro{
+   width:40%;
+   opacity: 0;
+    transform: translateX(100%);
+    
+}
+.animate-about-intro{
+   
+    opacity: 1;
+    transition: 1s ease-in-out;
+    transform: translateX(0);
+}
+.about-section h1{
+    color: white;
+    margin-bottom: 1rem;
+}
+.about-section p{
+    color: white;
+}
+.skill-section{
+    padding: 5rem;
+    height: 100vh;
+}
+.skill-outer-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+
+}
+.skill-section h1{
+    color: white;
+    margin:2rem 0;
+}
+.skill-section span{
+    color: white;
+}
+.progress-container{
+    display: flex;
+    flex-direction: column;
+}
+.progress-outer{
+    width: 15rem;
+    height: 0.5rem;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+
+.progress-inner-html{
+   width: 10rem;
+    height: 0.5rem;
+    background-color:red;
+    border-radius: 2rem;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.progress-inner-css{
+    width: 8rem;
+    height: 0.5rem;
+    background-color:chartreuse;
+    border-radius: 2rem;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.progress-inner-javascript{
+    width: 5rem;
+    height: 0.5rem;
+    background-color: yellow;
+    border-radius: 2rem;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.progress-inner-cpp{
+    width: 12rem;
+    height: 0.5rem;
+    background-color:cornflowerblue;
+    border-radius: 2rem;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.progress-inner-java{
+    width: 9.9rem;
+    height: 0.5rem;
+    background-color:burlywood;
+    border-radius: 2rem;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.progress-inner-reactjs{
+    width: 10rem;
+    height: 0.5rem;
+    background-color:darkmagenta;
+    border-radius: 2rem;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.percentage{
+    position: absolute;
+    right: -5px;
+    top: -25px;
+    opacity: 0;
+    transform: translateX(-100%);
+    color: white;
+}
+.animate-progress-inner{
+    opacity: 1;
+    transition: 2.5s ease-in;
+    transform: translateX(0); 
+ 
 }
