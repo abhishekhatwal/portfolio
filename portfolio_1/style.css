@@ -5,6 +5,7 @@
     padding: 0px;
     font-family: 'Bebas Neue', sans-serif;
     background-color: black;
+    color: white;
 }
 html{
     scroll-behavior: smooth;
@@ -229,3 +230,160 @@ justify-content:center ;
     transform: translateX(0); 
  
 }
+.education-section{
+    height: 100vh;
+}
+.education-section h1,h2,p{
+    color: white;
+}
+
+.education-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+.education-container ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.education-container li{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.desc p{
+    background-color: silver;
+}
+.heading{
+    width: 50rem;
+    border: 2px solid springgreen;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+.desc{
+    max-height: 0px;
+    width: 50rem;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.heading h3{
+    color: white;
+}
+.heading h3:hover{
+   cursor: pointer;
+}
+.active{
+    border: 1px solid springgreen;
+}
+.project-section{
+    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5rem;
+}
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+gap: 4rem;
+}
+.cards{
+    width: 400px;
+    height: 300px;
+}
+.card-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in;
+}
+.cards:hover .card-container{
+  transform: rotateY(180deg);
+}
+
+.front-card,.back-card{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+.back-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: rotateY(180deg);
+    row-gap: 2rem;
+    background-color:#ddd;
+}
+.back-card i:hover{
+cursor: pointer;
+color: orange
+}
+.back-card p,i{
+    background-color: #ddd;
+    color: cadetblue;
+}
+.front-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+.contact-me h1{
+  margin-bottom: 2rem;
+  font-size: 6rem;
+}
+.contact-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+.contact-me-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.contact-me-form form input{
+   width: 35rem; 
+    height: 2.5rem;
+    padding: 1rem;
+    background-color: rgb(40, 40, 40);
+}
+.contact-me-form form textarea{
+    width: 35rem;
+    height: 8rem;
+    padding: 1rem;
+    background-color: rgb(40, 40, 40);
+}
+.contact-me-form form button{
+width: 6rem;
+height: 2.5rem;
+background-color: rgb(217, 114, 77);
+}
+.contact-me i{
+    background-color: black;
+    color:  rgb(217, 114, 77);
+    margin: 0.3rem;
+}
+
+
+
