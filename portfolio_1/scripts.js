@@ -30,6 +30,10 @@ function toggle(element) {
     } else {
         desc.style.maxHeight = `${paragraphHeight}px`;
     }
-
     desc.classList.toggle('active');
+}
+
+function showhamburger(){
+    let hamburgeritem=document.querySelector('.hamburger-item');
+       hamburgeritem.classList.toggle('show-hide-hamburger');
 }
